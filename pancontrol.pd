@@ -1,0 +1,19 @@
+#N canvas 460 501 450 300 10;
+#X obj 100 101 cnv 15 120 60 empty empty empty 20 12 0 14 -257985 -66577
+0;
+#X floatatom 187 103 4 0 0 0 delay-time - -;
+#X floatatom 187 121 4 0 0 0 delay-stretch - -;
+#X floatatom 187 139 4 0 0 0 volume-stretch - -;
+#X obj 98 31 inlet;
+#X obj 98 53 route symbol;
+#X obj 239 111 sr del-time;
+#X obj 239 130 sr del-stretch;
+#X obj 239 149 sr vol-stretch;
+#X connect 1 0 6 0;
+#X connect 2 0 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 6 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 3 0;
+#X coords 0 -1 1 1 120 63 2 100 100;
